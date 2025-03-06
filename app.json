@@ -1,0 +1,60 @@
+{
+  "expo": {
+    "name": "ornamenta",
+    "slug": "ornamenta",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/logoStart.png",
+    "scheme": "ornamenta",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/logoMain.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/logoMain.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/logoStart.png",
+          "resizeMode": "cover",
+          "backgroundColor": "#ffffff",
+          "enableFullScreenImage_legacy": true
+        }
+      ],
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./assets/fonts/Roboto-Bold.ttf",
+            "./assets/fonts/Roboto-Regular.ttf",
+            "./assets/fonts/Unbounded-Regular.ttf"
+          ]
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "320ac724-4ad3-4fa1-a79e-e37deabae758"
+      }
+    },
+    "owner": "zarinakk"
+  }
+}
